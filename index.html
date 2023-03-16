@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="style.css" rel="stylesheet" />
+  <script defer src="script.js"></script>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Seating</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="wrapper">
+        <h1>Booking</h1>
+        <div class="movie-selector-dropdown">
+          <select name="movie-selector" id="movie-selector">
+            <option value="movie-1">Cocaine Bear</option>
+            <option value="movie-2">Scream II</option>
+            <option value="movie-3">Demon Slayer</option>
+            <option value="movie-4">Creed</option>
+          </select>
+        </div>
+        <div class="movie-answers" id="selectors">
+          <div id="movies-go-here">
+            <p id="default-title" class="hidden">Cocaine Bear</p>
+            <p id="default-price">Price per ticket: $5</p>
+            <p id="default-seats">Available seats: 20</p>
+          </div>
+
+          <div id="movie-1-info" class="hidden">
+            <p id="title-1">Cocaine Bear</p>
+            <p id="price-1">Price per ticket: $5</p>
+            <p class="available" id="available-1">Available seats: 20</p>
+          </div>
+          <div id="movie-2-info" class="hidden">
+            <p id="title-2">Scream II</p>
+            <p id="price-2">Price per ticket: $10</p>
+            <p class="available" id="available-2">Available seats: 20</p>
+          </div>
+          <div id="movie-3-info" class="hidden">
+            <p id="title-3">Demon Slayer</p>
+            <p id="price-3">Price per ticket: $15</p>
+            <p class="available" id="available-3">Available seats: 20</p>
+          </div>
+          <div id="movie-4-info" class="hidden">
+            <p id="title-4">Creed</p>
+            <p id="price-4">Price per ticket: $20</p>
+            <p class="available" id="available-4">Available seats: 20</p>
+          </div>
+          <hr />
+          <div class="parent" id="totals-and-cost">
+            <p class="child" id="seats-num">Seats selected: 0</p>
+            <p class="child" id="cost-num">Total cost: $0</p>
+          </div>
+        </div>
+
+        <div class="interactable-seats">
+          <section id="interactable-seats">
+            <div class="seat" id="seat1"></div>
+            <div class="seat" id="seat2"></div>
+            <div class="seat" id="seat3"></div>
+            <div class="seat" id="seat4"></div>
+            <div class="seat" id="seat5"></div>
+            <br />
+            <div class="seat" id="seat6"></div>
+            <div class="seat" id="seat7"></div>
+            <div class="seat" id="seat8"></div>
+            <div class="seat" id="seat9"></div>
+            <div class="seat" id="seat10"></div>
+            <br />
+            <div class="seat" id="seat11"></div>
+            <div class="seat" id="seat12"></div>
+            <div class="seat" id="seat13"></div>
+            <div class="seat" id="seat14"></div>
+            <div class="seat" id="seat15"></div>
+            <br />
+            <div class="seat" id="seat16"></div>
+            <div class="seat" id="seat17"></div>
+            <div class="seat" id="seat18"></div>
+            <div class="seat" id="seat19"></div>
+            <div class="seat" id="seat20"></div>
+          </section>
+        </div>
+        <button id="reset">Clear</button>
+        <button id="checkout">Check Out</button>
+      </div>
+    </div>
+  </body>
+</html>
